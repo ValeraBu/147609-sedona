@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Валерия Бутурлина](https://up.htmlacademy.ru/htmlcss/13/user/147609).
-* Наставник: `Неизвестно`.
+* Наставник: [Альберт Шариков](https://htmlacademy.ru/profile/insanegrv).
 
 ---
 
