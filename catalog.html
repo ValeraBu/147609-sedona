@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <link href="css/style.css" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,cyrillic" rel="stylesheet" type="text/css">
+      <link rel="stylesheet" href="css/normalize.css">
+      <link href="css/style.css" rel="stylesheet">
     <meta charset="utf-8">
     <title>Городок Седона</title>
   </head>
@@ -30,11 +32,11 @@
           </ul>
         </nav>
       </div>
+    </header>
 
 
       <main class="container">
-        <div class="filter-background">
-        </div>
+
 
         <form class="filter clearfix" action="https://htmlacademy.ru" method="post">
           <div class="filter-item1">
@@ -59,31 +61,38 @@
                 <label for="apartments-field">Апартаменты</label>
               </div>
             </div>
-            <div class="price">
-              <p>Стоимость в сутки(р):</p>
-              <div class="from-to">
-                <span class="from">от 0</span>
-                <span class="to">до 3000</span>
+          <div class="filter-range">
+            <div class="filter-range-title">Стоимость в сутки(Р):</p>
+              <div class="price-controls">
+                <label class="min-price">от <input type="text" name="min-price" value="0"> </label>
+                <label class="max-price">до <input type="text" name="max-price" value="3000"></label>
               </div>
-              <input type="range" min="0" max="3000">
-              <input type="submit" value="Показать">
+              <div class="range-controls">
+                <div class="scale">
+                  <div class="bar"></div>
+                </div>
+                <div class="range-toggle range-toggle-min"></div>
+                <div class="range-toggle range-toggle-max"></div>
+              </div>
+              <button class="btn-transparent" type="submit">Показать</button>
             </div>
-          </form>
+          </div>
+        </form>
 
 
           <div class="filter-results-header">
             <div class="found">Найдено:3</div>
-            <div class="filter-results">
-              <div class="sorting">Сортировка:</div>
-                <a class="selected" href="#">По цене</a>
-                <a href="#">По типу</a>
-                <a href="#">По рейтингу</a>
+              <div class="filter-results">
+                <div class="sorting">Сортировка:</div>
+                  <a class="selected" href="#">По цене</a>
+                  <a href="#">По типу</a>
+                  <a href="#">По рейтингу</a>
+                </div>
+                <div class="arrows">
+                  <a href="#"><i class="up"></i></a>
+                  <a href="#"><i class="down"></i></a>
+                </div>
               </div>
-              <div class="arrows">
-                <a href="#"><i class="up"></i></a>
-                <a href="#"><i class="down"></i></a>
-              </div>
-            </div>
 
             <div class="hotel-results">
               <article class="hotel-results-item clearfix">

@@ -1,21 +1,17 @@
-html,
-body {
-  min-width: 1280px;
-  min-height: 2760px;
-  margin: 0;
-  padding: 0;
-}
-
 body {
   font-size: 14px;
-  line-height: normal;
+  line-height: 21px;
   color: #000000;
+  text-transform: uppercase;
   font-weight: normal;
-  font-family: PTSans Bold, PTSans Regular, sans-serif;
+  font-family: PT Sans Regular, PT Sans Bold, Arial, sans-serif;
+  background-color: #f2f2f2;
 }
 
 h1 {
   font-size: 21px;
+  font-weight: bold;
+  font-family: PT Sans Bold, sans-serif;
   font-weight: bold;
 }
 
@@ -24,46 +20,85 @@ h2 {
   font-weight: bold;
 }
 
-.background {
-  background: url("background photo.jpg") no-repeat 50% 50%;
+.main-header {
+  margin: 0;
+  padding: 0;
 }
 
 .container {
   width: 1200px;
   margin: 0 auto;
+  background-color: #ffffff;
 }
 
 .main-navigation {
-  height: 55px;
-  text-align: center;
+  font-size: 0;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 
 .main-navigation li {
-  display: inline;
-  margin-right: 5px;
+  display: inline-block;
+  width: 20%;
+  margin: 0;
+  font-size: 14px;
 }
 
-.intro {
-  margin-top: 30px;
+.main-navigation li:first-child {
+  text-align: left;
 }
 
-.intro .background {
-  background: url("../img/background-photo.jpg") no-repeat 50% 3px;
+.main-navigation li:nth-child(2) {
+  text-align: left;
+}
+
+.main-navigation li:nth-child(4){
+  text-align: right;
+}
+
+.main-navigation li:last-child {
+  text-align: right;
+}
+
+.main-navigation a {
+    color: #000000;
+    text-decoration: none;
+    font-family: PTSans Bold, sans-serif;
+    font-weight: bold;
+    line-height: 26px;
+}
+
+.main-navigation .logo-sedona {
+position: absolute;
+top: 7px;
+left: 880px;
+}
+
+.main-text-item {
+  background: url("../img/background-photo.jpg") no-repeat;
   min-width: 1200px;
   min-height: 500px;
+  text-align: center;
+  padding-top: 75px;
+}
+
+.shape{
+  width: 1200px;
+  height: 60px;
+  position: absolute;
+  top: 506px;
 }
 
 .intro h1,
 .intro .about {
   text-align: center;
+  margin-bottom: 50px;
 }
 
-.intro h1{
-  margin-top: 50px;
-}
-
-.intro .about{
-  margin: 50px;
+.intro .about {
+  color:#333333;
+  font-family: PT Sans Regular, sans-serif;
+  line-height: 26px;
 }
 
 .block1{
@@ -75,9 +110,26 @@ h2 {
 .text-item {
   float: left;
   background-color: #81b3d2;
-  width: 400px;
-  height: 255px;
+  width: 280px;
+  height: 145px;
   text-align: center;
+  padding-left: 60px;
+  padding-right: 60px;
+  padding-top: 55px;
+  padding-bottom: 55px;
+}
+
+.title {
+  font-family: PT Sans Bold, sans-serif;
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 21px;
+  color: #ffffff;
+}
+
+.text-item p {
+  font-family: PT Sans Regular, sans-serif;
+  color: #ffffff;
 }
 
 .picture {
@@ -89,24 +141,37 @@ h2 {
   height: 280px;
 }
 
+.block2 p {
+  font-family: PT Sans Regular, sans-serif;
+  color: #333333;
+}
+
 .column1 {
   float: left;
   width: 300px;
   text-align: center;
+  padding-left: 70px;
 }
 
 .column2 {
   float: left;
-  width: 300px;
+  width: 320px;
   text-align: center;
-  margin-left: 100px;
-  margin-right: 100px;
+  padding-left: 90px;
 }
 
 .column3 {
   float: right;
   width: 300px;
   text-align: center;
+  padding-right: 65px;
+}
+
+.mini-title {
+  font-family: PT Sans Bold, sans-serif;
+  font-size: 21px;
+  font-weight: bold;
+  line-height: 21px;
 }
 
 .block3{
@@ -122,25 +187,41 @@ h2 {
 .text-item2 {
   float: right;
   background-color: #81b3d2;
-  width: 400px;
-  height: 255px;
+  width: 304px;
+  height: 145px;
   text-align: center;
+  padding-left: 48px;
+  padding-right: 48px;
+  padding-top: 55px;
+  padding-bottom: 55px;
+}
+
+.text-item2 p {
+  font-family: PT Sans Regular, sans-serif;
+  color: #ffffff;
 }
 
 .block4 {
   background-color: #eeeeee;
   width: 1200px;
-  height: 255px;
-  padding-top: 60px;
+  height: 200px;
+  padding-top: 50px;
 }
 
+.call {
+  display: inline-block;
+}
 .call p{
-  text-align: center;
-  width: 435px;
+  width: 430px;
 }
 
 .main-call {
-  padding-top: 60px;
+  font-size: 30px;
+  line-height: 24px;
+  font-family: PT Sans Bold, sans-serif;
+  font-weight: bold;
+  padding-top: 55px;
+  padding-left: 420px;
 }
 
 .form-item{
@@ -160,11 +241,12 @@ h2 {
 }
 
 /*Для catalog.html*/
-.filter-background{
+.filter{
   background: url("../img/filter-background.jpg") no-repeat 50%;
   width: 1200px;
   height: 215px;
   margin-top: 20px;
+  color: #ffffff;
 }
 
 .filter-item1{
@@ -190,13 +272,127 @@ h2 {
   clear: both;
 }
 
-.price {
+.filter-range {
   float: right;
   padding-right: 70px;
   text-align: center;
+  width: 330px;
+}
+
+.filter-range-title {
+  margin-bottom: 9px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 21px;
+}
+
+.price-controls {
+  position: relative;
+  height: 36px;
+  margin-bottom: 20px;
+  font-size: 0;
+  border: 2px solid #ffffff;
+  border-radius: 2px;
+}
+
+.price-controls::after {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 22px;
+  background: #ffffff;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+}
+
+.price-controls label {
+  display: inline-block;
+  font-size: 14px;
+  line-height: 38px;
+  vertical-align: top;
+  cursor: pointer;
+}
+
+.price-controls .min-price,
+.price-controls .max-price {
+  width: 90px;
+  padding-left: 65px;
+}
+
+.price-controls input {
+  width: 50px;
+  margin: 0;
+  color: inherit;
+  font: inherit;
+  background: none;
+  border: none;
+  outline: none;
+}
+
+.range-controls {
+  position: relative;
+  margin-bottom: 32px;
+}
+
+.range-controls .scale {
+  height: 2px;
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.range-controls .bar {
+  width: 80%;
+  height: 2px;
+  background: #ffffff;
+}
+
+.range-toggle {
+  position: absolute;
+  top: -9px;
+  width: 4px;
+  height: 4px;
+  background: #ababab;
+  border: 8px solid #ffffff;
+  border-radius: 50%;
+  box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+  cursor: pointer;
+}
+
+.range-toggle:hover {
+  background: #1c4f80;
+}
+
+.range-toggle-min {
+  left: 0;
+}
+
+.range-toggle-max {
+  left: 80%;
+}
+
+.btn-transparent {
+  display: block;
+  margin: 0 auto;
+  padding: 6px 35px;
+  font-size: 14px;
+  line-height: 20px;
+  color: #ffffff;
+  text-transform: uppercase;
+  background: transparent;
+  border: 2px solid #ffffff;
+  border-radius: 2px;
+  outline: none;
+  cursor: pointer;
+}
+
+.btn-transparent:hover {
+  color: #000000;
+  background: #ffffff
 }
 
 .filter-results-header{
+  float: left;
   height: 85px;
   width: 1200px;
   border: 3px solid #f2f2f2;
