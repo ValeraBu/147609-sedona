@@ -477,7 +477,6 @@ input[type="checkbox"] + label:hover::before {
 .filter-results-header{
   width: 1200px;
   border-bottom: 1px solid #f2f2f2;
-
 }
 
 .found{
@@ -531,14 +530,13 @@ input[type="checkbox"] + label:hover::before {
 
 .hotel-results-item{
   width: 1200px;
-  padding-left: 70px;
   border-bottom: 1px solid #f2f2f2;
-  padding-right: 70px;
 }
 
 .hotel-results-item .image{
   float: left;
   padding: 30px 0;
+  padding-left: 70px;
   padding-right: 30px;
   width: 135px;
   height: 90px;
@@ -552,6 +550,9 @@ input[type="checkbox"] + label:hover::before {
 
 .rating-item{
   float:right;
+  padding-right: 70px;
+  text-align: right;
+  padding-top: 30px;
 }
 
 .title-hotel {
@@ -563,9 +564,9 @@ input[type="checkbox"] + label:hover::before {
 }
 
 .hotels-description-item .description {
-  display: inline;
+  /*display: inline;*/
   color: #333333;
-  padding-bottom: 15px;
+  /*padding-bottom: 15px;*/
 }
 
 .main-footer {
