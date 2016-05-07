@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,cyrillic" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/normalize.css">
     <link href="css/style.css" rel="stylesheet">
     <meta charset="utf-8">
     <title>Городок Седона</title>
   </head>
   <body>
     <header class="main-header">
-      <div class="container">
+    <div class="shadow">
+      <div class="container clearfix">
         <nav class="main-navigation">
           <ul>
             <li>
@@ -18,7 +21,7 @@
             </li>
             <li>
               <a class="logo-sedona" href="#">
-              <img src="img/logo.png" width="138" height="70" alt="Sedona">
+                <img src="img/logo.png" width="138" height="70" alt="Sedona">
               </a>
             </li>
             <li>
@@ -30,25 +33,30 @@
           </ul>
         </nav>
       </div>
+    </header>
 
 
-      <main class="container">
-        <div class="intro">
-          <div class="background">
+    <main class="container">
+        <div class="intro clearfix">
+          <div class="main-text-item">
+            <img src="img/text-item.png" width="455" height="340">
           </div>
           <div class="shape">
+            <img src="img/shape.png" width="1200" height="70">
           </div>
-          <h1>Седона-небольшой городок в Аризоне,
+          <h1>Седона-небольшой городок в Аризоне,<br>
           заслуживающий большего!</h1>
           <p class="about">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
         </div>
 
 
-        <div class="block1">
+        <div class="block1 clearfix">
           <div class="text-item">
             <p class="title">Настоящий городок</p>
-            <p> - №1 - </p>
-            <p>Седона - не аттракцион для туристов, там течет своя жизнь</p>
+            <div class="description-item">
+              <p> - №1 - </p>
+              <p>Седона - не аттракцион для туристов, там течет своя жизнь</p>
+            </div>
           </div>
           <div class="picture">
             <img src="img/nature1.jpg" width="800" height="256">
@@ -56,7 +64,7 @@
         </div>
 
 
-        <div class="block2">
+        <div class="block2 clearfix">
           <div class="column1">
             <div class="icons">
               <img src="img/house.png" width="75" height="72">
@@ -81,19 +89,19 @@
         </div>
 
 
-        <div class="block3">
-          <div class="text-item">
+        <div class="block3 clearfix">
+          <div class="text-item2">
             <p class="title">Там есть мост дьявола</p>
             <p> - №2 - </p>
             <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
           </div>
-          <div class="picture">
+          <div class="picture2">
             <img src="img/nature2.jpg" width="800" height="256">
           </div>
         </div>
 
 
-        <div class="block4">
+        <div class="block4 clearfix">
           <div class="column1">
             <p class="mini-title">Небольшая площадь</p>
             <p> - №3 - </p>
@@ -114,12 +122,12 @@
 
         <div class="сall">
           <p class="main-call">Заинтересовались?</p>
-          <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+          <p class="mini-call">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
         </div>
 
 
         <div class="form-item">
-          <button><a href="#">Поиск гостиницы в Седоне</a></button>
+          <!--<button><a href="#">Поиск гостиницы в Седоне</a></button>-->
           <form action="https://htmlacademy.ru" method="get">
             <span class="title-form">Поиск гостиницы в Седоне</span>
             <div class="arrival-date">
@@ -150,20 +158,21 @@
       </main>
 
 
-      <footer>
-        <div class="container">
-          <section class="footer-contacts">
-            <a href="#">#VisitSedona</a>
-          </section>
-          <section class="footer-social"
-            <a class="social-btn social-btn-tw" href="#">Твиттер</a>
-            <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
-            <a class="social-btn social-btn-yt" href="#">YouTube</a>
-          </section>
-          <section class="footer-copyright">
-            <p>Website by</p>
-            <a class="btn" href="https://htmlacademy.ru"><img src="htmlacademy.png" alt="htmlacademy"></a>
-          </section>
+      <footer class="container clearfix">
+          <div class="main-footer">
+            <section class="footer-contacts">
+              <a href="#">#VisitSedona</a>
+            </section>
+            <section class="footer-social">
+              <a class="social-btn social-btn-tw" href="#">Твиттер</a>
+              <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
+              <a class="social-btn social-btn-yt" href="#">YouTube</a>
+            </section>
+            <section class="footer-copyright">
+              <p>Website by</p>
+              <a class="btn" href="https://htmlacademy.ru"><img src="htmlacademy.png" alt="htmlacademy"></a>
+            </section>
+          </div>
         </div>
       </footer>
     </body>
