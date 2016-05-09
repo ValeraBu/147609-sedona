@@ -145,17 +145,32 @@ body {
   text-align: center;
   padding-top: 51px;
   padding-bottom: 51px;
+  margin: 0;
 }
 
-.title {
+.title1,
+.title2 {
   font-weight: bold;
   font-size: 21px;
   line-height: 21px;
   color: #ffffff;
 }
 
-.description-item {
+.title1 {
+width: 130px;
+padding-left: 135px;
+padding-right: 135px;
+}
+
+.description-item1,
+.description-item2 {
   color: #ffffff;
+}
+
+.description-item1{
+  width: 310px;
+  padding-left: 45px;
+  padding-right: 45px;
 }
 
 .picture {
@@ -165,11 +180,24 @@ body {
 }
 
 .block2 {
-  height: 280px;
+  width: 1200px;
+  height: 255px;
 }
 
 .block2 p {
   color: #333333;
+}
+
+.title2 {
+  width: 172px;
+  padding-left: 114px;
+  padding-right: 114px;
+}
+
+.description-item2 {
+  width: 335px;
+  padding-left: 32px;
+  padding-right: 32px;
 }
 
 .column1 {
