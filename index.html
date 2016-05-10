@@ -1,15 +1,14 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
+    <meta charset="utf-8">
+    <title>Городок Седона</title>
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,cyrillic" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="css/normalize.css">
     <link href="css/style.css" rel="stylesheet">
-    <meta charset="utf-8">
-    <title>Городок Седона</title>
   </head>
   <body>
   <header class="main-header container clearfix">
-    <div class="shadow">
         <nav class="main-navigation">
           <ul>
             <li>
@@ -20,7 +19,7 @@
             </li>
             <li>
               <a class="logo-sedona" href="#">
-                <img src="img/logo.png" width="138" height="70" alt="Sedona">
+                <img src="img/logo.png" width="138" height="70" alt="sedona">
               </a>
             </li>
             <li>
@@ -37,10 +36,10 @@
     <main class="container">
         <div class="intro clearfix">
           <div class="main-text-item">
-            <img src="img/text-item.png" width="455" height="340">
+            <img src="img/text-item.png" width="455" height="340" alt="welcome">
           </div>
           <div class="shape">
-            <img src="img/shape.png" width="1200" height="70">
+            <img src="img/shape.png" width="1200" height="70" alt="shape">
           </div>
           <h1>Седона-небольшой городок в Аризоне,<br>
           заслуживающий большего!</h1>
@@ -57,7 +56,7 @@
             </div>
           </div>
           <div class="picture">
-            <img src="img/nature1.jpg" width="800" height="256">
+            <img src="img/nature1.jpg" width="800" height="256" alt="nature">
           </div>
         </div>
 
@@ -65,21 +64,21 @@
         <div class="block2 clearfix">
           <div class="column1">
             <div class="icons">
-              <img src="img/house.png" width="75" height="72">
+              <img src="img/house.png" width="75" height="72" alt="жилье">
             </div>
             <p class="mini-title">Жилье</p>
             <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
           </div>
           <div class="column2">
             <div class="icons">
-              <img src="img/food.png" width="75" height="72">
+              <img src="img/food.png" width="75" height="72" alt="еда">
             </div>
             <p class="mini-title">Еда</p>
             <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
           </div>
           <div class="column3">
             <div class="icons">
-              <img src="img/souvenirs.png" width="75" height="72">
+              <img src="img/souvenirs.png" width="75" height="72" alt="Сувениры">
             </div>
             <p class="mini-title">Сувениры</p>
             <p>Не только китайского, но и местного производства!</p>
@@ -96,7 +95,7 @@
             </div>
           </div>
           <div class="picture2">
-            <img src="img/nature2.jpg" width="800" height="256">
+            <img src="img/nature2.jpg" width="800" height="256" alt="bridge">
           </div>
         </div>
 
@@ -127,29 +126,31 @@
 
 
         <div class="form-item">
-          <button><a href="#">Поиск гостиницы в Седоне</a></button>
-          <form action="https://htmlacademy.ru" method="get">
+          <button class="search-hotel">Поиск гостиницы в Седоне</button>
+          <form class="search-form" action="https://htmlacademy.ru" method="get">
             <div class="arrival-date">
               <label for="date">Дата заезда:</label>
-              <input type="date" name="date" value="2016-04-24">
+              <input type="date" name="date" value="2016-04-24" required>
             </div>
             <div class="departure">
               <label for="date">Дата выезда:</label>
-           		<input type="date" name="date" value="2016-07-04">
+           		<input type="date" name="date" value="2016-07-04" required>
             </div>
             <div class="selection">
-              <label>Взрослые:
-              <input type="number" value="2">
-              </label>
-              <label>Дети:
-              <input type="number" value="0">
-              </label>
+              <div class="selection-adult">
+                <label for="number">Взрослые:</label>
+                <input type="number" value="2" required>
+              </div>
+              <div class="selection-child">
+                <label for="number">Дети:</label>
+                <input type="number" value="0" required>
+              </div>
             </div>
             <div class="btn">
               <input type="submit" value="Найти">
             </div>
-          </div>
           </form>
+        </div>
 
 
         <div class="background-map">
@@ -172,10 +173,25 @@
               <a class="btn" href="https://htmlacademy.ru"><img src="htmlacademy.png" alt="htmlacademy"></a>
             </section>
           </div>
-          </div>
       </footer>
-      <script>
-        var link = document.
-      </script>
+   <script>
+     var formOpen = document.querySelector(".search-hotel");
+     var popup = document.querySelector(".search-form");
+     var formClose = popup.querySelector(".search-hotel");
+     var form = popup.querySelector("form");
+     var arrival = popup.querySelector("[name=date]");
+     var departure = popup.querySelector("[name=date]");
+
+     formOpen.addEventListener("click", function(event) {
+       event.preventDefault();
+       popup.classList.add("modal-content-show");
+     });
+
+     formClose.addEventListener("click", function(event) {
+       event.preventDefault();
+       popup.classList.remove("modal-content-show");
+     });
+
+   </script>
     </body>
   </html>

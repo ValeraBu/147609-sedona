@@ -4,7 +4,7 @@ body {
   color: #000000;
   text-transform: uppercase;
   font-weight: normal;
-  font-family: 'PT Sans Regular', sans-serif;
+  font-family: 'PT Sans Regular', 'Arial', sans-serif;
   background-color: #f2f2f2;
 }
 
@@ -24,9 +24,8 @@ body {
   margin: 0 auto;
   background-color: #ffffff;
 }
-
-/*.shadow{
-  width: auto;
+/*
+.shadow{
   box-shadow: 0 0 15px 5px rgba(0, 1, 1, 0.2);
 }*/
 
@@ -274,39 +273,55 @@ padding-right: 135px;
 }
 
 .form-item{
-  position: relative;
-  z-index: 3;
-  top: 504px;
   width: 570px;
+  position: absolute;
+  z-index: 3;
+  top: 2196px;
+  left: 50%;
   background-color: #ffffff;
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: -290px;
 }
 
-.form-item button{
+.search-hotel{
+  position: absolute;
   background-color: #766357;
   width: 100%;
   padding: 34px 0;
   border: none;
-  margin-bottom: 49px;
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 21px;
+  font-weight: bold;
+  line-height: 26px;
+  cursor: pointer;
+  top: -90px;
+  left: 0;
 }
 
-.form-item a {
-    color: #ffffff;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-size: 21px;
-    font-weight: bold;
-    line-height: 26px;
+.modal-content-show {
+  display: block;
+}
+
+form {
+  display: none;
+}
+
+.search-form .arrival-date input,
+.search-form .departure input  {
+  background-image: url("../img/sprite.png");
+  background-repeat: no-repeat;
+  background-position: 315px -120px;
 }
 
 .arrival-date {
   padding-bottom: 30px;
+  padding-top: 55px;
+  padding-left: 55px;
 }
 
 .arrival-date label {
-  padding-right: 55px;
+  padding-right: 20px;
   font-size: 14px;
   font-weight: bold;
   line-height: 26px;
@@ -321,6 +336,7 @@ padding-right: 135px;
   padding-top: 4px;
   padding-bottom: 4px;
   padding-left: 15px;
+  padding-right: 175px;
 }
 
 .arrival-date input[type="date"]:hover{
@@ -329,10 +345,11 @@ padding-right: 135px;
 
 .departure {
   padding-bottom: 30px;
+  padding-left: 55px;
 }
 
 .departure label {
-  padding-right: 55px;
+  padding-right: 17px;
   font-size: 14px;
   font-weight: bold;
   line-height: 26px;
@@ -347,6 +364,7 @@ padding-right: 135px;
   padding-top: 4px;
   padding-bottom: 4px;
   padding-left: 15px;
+  padding-right: 175px;
 }
 
 .departure input[type="date"]:hover{
@@ -355,12 +373,36 @@ padding-right: 135px;
 
 .selection {
   padding-bottom: 55px;
+  padding-left: 55px;
+}
+
+.selection-adult,
+.selection-child {
+  display: inline-block;
+  vertical-align: top;
 }
 
 .selection label {
   font-size: 14px;
   font-weight: bold;
   line-height: 26px;
+}
+
+.selection-adult label{
+  padding-right: 40px;
+}
+
+.selection-adult input {
+  margin-right: 25px;
+  padding-left: 50px;
+}
+
+.selection-child label {
+  padding-right: 28px;
+}
+
+.selection-child input {
+  padding-left: 50px;
 }
 
 .selection input[type="number"] {
@@ -371,10 +413,21 @@ padding-right: 135px;
   border: none;
   padding-top: 4px;
   padding-bottom: 4px;
+  width: 64px;
 }
 
 .selection input[type="number"]:hover {
   background-color: #ebebeb;
+}
+
+.selection input {
+  background-image: url("../img/sprite.png");
+  background-repeat: no-repeat;
+  background-position: 5px -560px;
+}
+
+.btn {
+  padding-left: 55px;
 }
 
 .btn input[type="submit"] {
@@ -397,10 +450,6 @@ padding-right: 135px;
   cursor: pointer;
 }
 
-/*.form-item form {
-  display: none;
-}*/
-
 .background-map{
   background: url("../img/map.jpg") no-repeat;
   width: 1200px;
@@ -419,10 +468,10 @@ padding-right: 135px;
 
 .footer-contacts {
   float: left;
-  width: 150px;
+  width: 140px;
   padding-left: 130px;
-  padding-top: 50px;
-  padding-bottom: 52px;
+  padding-top: 48px;
+  padding-bottom: 49px;
   padding-right: 250px;
 }
 
@@ -487,7 +536,7 @@ padding-right: 135px;
 
 .footer-copyright {
   float: right;
-  width: 205px;
+  width: 300px;
   padding-right: 100px;
   padding-top: 40px;
   padding-bottom: 40px;
