@@ -73,6 +73,18 @@ body {
   z-index: 2;
 }
 
+.main-navigation .active-page a {
+  color: #766357;
+}
+
+.main-navigation .active-page a:hover {
+  color: #604e43;
+}
+
+.main-navigation .active-page a:active {
+  color: rgba(118, 99, 87, 0.3);
+}
+
 .main-navigation a {
   display: inline-block;
   color: #000000;
@@ -98,11 +110,14 @@ body {
 
 .main-text-item {
   position: relative;
-  background: url("../img/background-photo.jpg") no-repeat;
+  background:  #81b3d2 url("../img/background-photo.jpg") no-repeat;
   min-width: 1200px;
-  min-height: 485px;
+  min-height: 509px;
   text-align: center;
-  padding-top: 82px;
+}
+
+.main-text-item img {
+    padding-top: 82px;
 }
 
 .shape{
@@ -110,7 +125,6 @@ body {
   height: 60px;
   position: absolute;
   top: 439px;
-  margin-bottom: 55px;
 }
 
 .shape img {
@@ -119,7 +133,7 @@ body {
 }
 
 h1.appeal {
-  padding-top: 3px;
+  padding-top: 60px;
   padding-bottom: 14px;
   margin: 0;
   font-size: 21px;
@@ -198,6 +212,7 @@ padding-bottom: 5px;
   float: right;
   width: 800px;
   height: 256px;
+  background-color: #81b3d2;
 }
 
 .block2 {
@@ -290,6 +305,7 @@ padding-bottom: 5px;
   float: left;
   width: 800px;
   height: 256px;
+  background-color: #81b3d2;
 }
 
 .text-item2 {
@@ -336,7 +352,6 @@ padding-bottom: 5px;
   line-height: 24px;
   font-weight: bold;
   text-align: center;
-  padding-bottom: 5px;
 }
 
 .mini-call2 {
@@ -347,7 +362,7 @@ padding-bottom: 5px;
   text-align: center;
   margin: 0 auto;
   color: #333333;
-  margin-bottom: 54px;
+  margin-bottom: 46px;
 }
 
 .search-hotel{
@@ -384,7 +399,7 @@ padding-bottom: 5px;
   box-shadow: 0 0 30px 10px rgba(0, 0, 0, 0.2);
   display: none;
   z-index: 3;
-  top: 2185px;
+  top: 2171px;
   left: 50%;
   background-color: #ffffff;
   margin-left: -283px;
@@ -404,7 +419,13 @@ padding-bottom: 5px;
   100% {opacity: 1;}
 }
 
-.search-form .arrival-date input,
+.search-form .arrival-date input {
+  background-image: url("../img/sprite.png");
+  background-repeat: no-repeat;
+  background-position: 295px -317px;
+  cursor: pointer;
+}
+
 .search-form .departure input  {
   background-image: url("../img/sprite.png");
   background-repeat: no-repeat;
@@ -412,14 +433,25 @@ padding-bottom: 5px;
   cursor: pointer;
 }
 
-.search-form .arrival-date input:hover,
+.search-form .arrival-date input:hover {
+  background-image: url("../img/sprite.png");
+  background-repeat: no-repeat;
+  background-position: 297px -439px;
+}
+
+
 .search-form .departure input:hover {
   background-image: url("../img/sprite.png");
   background-repeat: no-repeat;
   background-position: 295px -439px;
 }
 
-.search-form .arrival-date input:active,
+.search-form .arrival-date input:active {
+  background-image: url("../img/sprite.png");
+  background-repeat: no-repeat;
+  background-position: 297px -377px;
+}
+
 .search-form .departure input:active {
   background-image: url("../img/sprite.png");
   background-repeat: no-repeat;
@@ -428,32 +460,36 @@ padding-bottom: 5px;
 
 .arrival-date {
   padding-bottom: 35px;
-  padding-top: 55px;
+  padding-top: 53px;
   padding-left: 57px;
 }
 
 .arrival-date label {
-  padding-right: 20px;
+  padding-right: 18px;
   font-size: 14px;
   font-weight: bold;
   line-height: 26px;
 }
 
-.arrival-date input[type="text"] {
-  width: 292px;
-  background-color: #f2f2f2;
+.active-input {
+  width: 290px;
+  background-color: #ffffff;
   font-size: 14px;
   font-weight: bold;
   line-height: 26px;
-  border: none;
-  padding: 4px 14px;
-  padding-right: 40px;
+  border: 2px solid #e5e5e5;
+  padding-left: 10px;
+  padding-right: 43px;
   text-transform: uppercase;
   margin-right: 51px;
 }
 
-.arrival-date input[type="text"]:hover{
+.active-input:hover{
+  width: 292px;
+  border: none;
   background-color: #ebebeb;
+  padding: 3px 12px;
+  padding-right: 43px;
 }
 
 .departure {
@@ -494,6 +530,7 @@ padding-bottom: 5px;
 .selection-child {
   display: inline-block;
   vertical-align: top;
+  font-size: 0;
 }
 
 .selection label {
@@ -509,7 +546,6 @@ padding-bottom: 5px;
 .selection-adult input {
   padding-left: 50px;
   margin-right: 50px;
-  margin-left: 2px;
 }
 
 .selection-child label {
@@ -529,15 +565,30 @@ padding-bottom: 5px;
   padding-top: 4px;
   padding-bottom: 4px;
   width: 64px;
-  position: relative;
-  z-index: 1;
+}
+
+.selection-button1 {
+  display: inline-block;
+  vertical-align: top;
+  text-align: center;
+  box-sizing: border-box;
+  padding: 2px 4px;
+  width: 112px;
+  font-size: 14px;
+}
+
+.selection-button2 {
+  display: inline-block;
+  vertical-align: top;
+  text-align: center;
+  box-sizing: border-box;
+  padding: 2px 4px;
+  width: 110px;
+  font-size: 14px;
 }
 
 .minus {
-  position: absolute;
-  left: 170px;
-  top: 194px;
-  z-index: 2;
+  display: inline-block;
   border: none;
   width: 30px;
   height: 30px;
@@ -561,10 +612,7 @@ padding-bottom: 5px;
   }
 
 .plus {
-  position: absolute;
-  left: 246px;
-  top: 194px;
-  z-index: 2;
+  display: inline-block;
   border: none;
   width: 30px;
   height: 30px;
@@ -587,12 +635,8 @@ padding-bottom: 5px;
   background-position: -10px -1330px;
 }
 
-
 .minus2 {
-  position: absolute;
-  left: 405px;
-  top: 194px;
-  z-index: 2;
+  display: inline-block;
   border: none;
   width: 30px;
   height: 30px;
@@ -616,10 +660,7 @@ padding-bottom: 5px;
   }
 
 .plus2 {
-  position: absolute;
-  left: 480px;
-  top: 194px;
-  z-index: 2;
+  display: inline-block;
   border: none;
   width: 30px;
   height: 30px;
@@ -966,7 +1007,7 @@ padding-bottom: 5px;
 }
 
 .main-footer {
-  position: relative;
+  position: absolute;
   background-color: rgba(254, 254, 254, 0.9);
   z-index: 2;
   margin: 0;
@@ -1157,7 +1198,7 @@ input[type="checkbox"] + label {
   position: relative;
   cursor: pointer;
   padding-left: 40px;
-  padding-bottom: 6px;
+  padding-bottom: 4px;
 }
 
 input[type="checkbox"] + label::before {
@@ -1228,7 +1269,6 @@ input[type="checkbox"]:disabled + label::before {
   padding-right: 115px;
   padding-left: 72px;
   padding-top: 28px;
-
 }
 
 .filter-item2{
@@ -1239,7 +1279,7 @@ input[type="checkbox"]:disabled + label::before {
 
 .filter-range {
   float: left;
-  margin-left: 340px;
+  margin-left: 344px;
   padding-top: 28px;
 }
 
@@ -1248,11 +1288,12 @@ input[type="checkbox"]:disabled + label::before {
   font-weight: 600;
   font-size: 16px;
   line-height: 21px;
+  margin-left: -8px;
 }
 
 .price-controls {
   position: relative;
-  margin-bottom: 12px;
+  margin-bottom: 20px;
   font-size: 0;
   border: 2px solid #ffffff;
   border-radius: 2px;
@@ -1267,25 +1308,24 @@ input[type="checkbox"]:disabled + label::before {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-
 }
 
 .price-controls label {
   display: inline-block;
   font-size: 14px;
-  line-height: 38px;
+  line-height: 30px;
   vertical-align: top;
   cursor: pointer;
 }
 
 .price-controls .min-price {
   width: 100px;
-  padding-left: 70px;
+  padding-left: 65px;
 }
 
 .price-controls .max-price {
   width: 100px;
-  padding-left: 45px;
+  padding-left: 48px;
 }
 
 .price-controls input {
@@ -1400,23 +1440,22 @@ input[type="checkbox"]:disabled + label::before {
   text-decoration: none;
 }
 
-.filter-name a:not(.selected){
+.filter-name a:not(.active-point){
   color: rgba(0, 0, 0, 0.3);
   border-bottom: 1px dotted #81b3d2;
 }
 
-.filter-name a:hover:not(.selected),
-.filter-name a:hover.selected  {
+.filter-name a:hover:not(.active-point) {
   color: #81b3d2;
   border-bottom: 1px dotted #81b3d2;
 }
 
-.filter-name a.selected {
+.filter-name a.active-point  {
   color: #81b3d2;
 }
 
-.filter-name a:active:not(.selected),
-.filter-name a:active.selected {
+.filter-name a:active:not(.active-point),
+.filter-name a:active.active-point {
   color: #000000;
   border-bottom: none;
 }
@@ -1458,7 +1497,7 @@ input[type="checkbox"]:disabled + label::before {
   background-position: -20px -170px;
 }
 
-.arrow-down::before{
+.arrow-down-active::before{
   width: 11px;
   height: 10px;
   background-position: -20px -70px;
@@ -1470,22 +1509,10 @@ input[type="checkbox"]:disabled + label::before {
   background-position: -20px -270px;
 }
 
-.arrow-down:hover::before {
-  width: 11px;
-  height: 10px;
-  background-position: -20px -120px;
-}
-
 .arrow-up:active::before {
   width: 11px;
   height: 10px;
   background-position: -20px -220px;
-}
-
-.arrow-down:active::before {
-  width: 11px;
-  height: 10px;
-  background-position: -20px -70px;
 }
 
 .hotel-results-item{

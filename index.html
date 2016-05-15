@@ -37,7 +37,7 @@
     <main>
         <div class="intro clearfix">
           <div class="main-text-item">
-            <img src="img/text-item.png" width="455" height="340" alt="welcome">
+            <img src="img/text-item.png" width="458" height="352" alt="welcome">
           </div>
           <div class="shape">
             <img src="img/shape.png" width="1200" height="70" alt="shape">
@@ -131,7 +131,7 @@
           <form class="search-form" action="https://htmlacademy.ru" method="get">
             <div class="arrival-date">
               <label for="arrival">Дата заезда:</label>
-              <input id="arrival" type="text" name="date" value="24 апреля 2016" required>
+              <input class="active-input" id="arrival" type="text" name="date" value="24 апреля 2016" required>
             </div>
             <div class="departure">
               <label for="departure-date">Дата выезда:</label>
@@ -140,15 +140,19 @@
             <div class="selection">
               <div class="selection-adult">
                 <label for="adult">Взрослые:</label>
-                <button class="minus"></button>
-                <input id="adult" type="text" value="2" required>
-                <button class="plus"></button>
+                <div class="selection-button1">
+                  <span class="minus"></span>
+                  <input id="adult" type="text" value="2" required>
+                  <span class="plus"></span>
+                </div>
               </div>
               <div class="selection-child">
                 <label for="child">Дети:</label>
-                <button class="minus2"></button>
-                <input id="child" type="text" value="0" required>
-                <button class="plus2"></button>
+                <div class="selection-button2">
+                  <span class="minus2"></span>
+                  <input id="child" type="text" value="0" required>
+                  <span class="plus2"></span>
+                </div>
               </div>
             </div>
             <div class="btn-search">
