@@ -87,6 +87,7 @@ body {
 
 .main-navigation a {
   display: inline-block;
+  vertical-align: top;
   color: #000000;
   text-decoration: none;
   font-weight: bold;
@@ -121,7 +122,6 @@ body {
 }
 
 .shape{
-  width: 1200px;
   height: 60px;
   position: absolute;
   top: 439px;
@@ -157,7 +157,6 @@ h1.appeal {
 }
 
 .block1{
-  width: 1200px;
   height: 255px;
   margin-bottom: 60px;
 }
@@ -183,10 +182,10 @@ h1.appeal {
 }
 
 .title1 {
-width: 130px;
-padding-left: 135px;
-padding-right: 135px;
-padding-bottom: 5px;
+  width: 130px;
+  padding-left: 135px;
+  padding-right: 135px;
+  padding-bottom: 5px;
 }
 
 .number-item {
@@ -216,7 +215,6 @@ padding-bottom: 5px;
 }
 
 .block2 {
-  width: 1200px;
   margin-bottom: 60px;
 }
 
@@ -324,7 +322,6 @@ padding-bottom: 5px;
 
 .block4 {
   background-color: #eeeeee;
-  width: 1200px;
   padding-top: 30px;
   padding-bottom: 45px;
   margin-bottom: 55px;
@@ -392,7 +389,6 @@ padding-bottom: 5px;
   font-weight: bold;
   padding-left: 136px;
   padding-right: 136px;
-
 }
 
 .search-form {
@@ -1082,7 +1078,6 @@ padding-bottom: 5px;
 
 .background-map{
   background: url("../img/map.jpg") no-repeat;
-  width: 1200px;
   height: 600px;
   position: relative;
   z-index: 1;
@@ -1264,7 +1259,6 @@ padding-bottom: 5px;
 /*Стили для catalog.html*/
 .filter{
   background: #7c96b3 url("../img/filter-background.jpg") no-repeat 50%;
-  width: 1200px;
   height: 215px;
   color: #ffffff;
 }
@@ -1664,14 +1658,14 @@ p.type3 {
 
 .btn-1,
 .btn-2 {
-    color: #ffffff;
-    border: none;
-    font-size: 14px;
-    line-height: 21px;
-    font-weight: bold;
-    padding: 1px 15px;
-    text-transform: uppercase;
-    cursor: pointer;
+  color: #ffffff;
+  border: none;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: bold;
+  padding: 1px 15px;
+  text-transform: uppercase;
+  cursor: pointer;
 }
 
 .btn-1 {
@@ -1796,175 +1790,175 @@ p.type3 {
 }
 
 .sprite {
-    background-image: url("../img/sprite.png");
-    background-repeat: no-repeat;
-    display: block;
+  background-image: url("../img/sprite.png");
+  background-repeat: no-repeat;
+  display: block;
 }
 
 .sprite-arrow-down {
-    width: 11px;
-    height: 10px;
-    background-position: -20px -20px;
+  width: 11px;
+  height: 10px;
+  background-position: -20px -20px;
 }
 
 .sprite-arrow-down-down {
-    width: 11px;
-    height: 10px;
-    background-position: -20px -70px;
+  width: 11px;
+  height: 10px;
+  background-position: -20px -70px;
 }
 
 .sprite-arrow-down-hvr {
-    width: 11px;
-    height: 10px;
-    background-position: -20px -120px;
+  width: 11px;
+  height: 10px;
+  background-position: -20px -120px;
 }
 
 .sprite-arrow-up {
-    width: 11px;
-    height: 10px;
-    background-position: -20px -170px;
+  width: 11px;
+  height: 10px;
+  background-position: -20px -170px;
 }
 
 .sprite-arrow-up-down {
-    width: 11px;
-    height: 10px;
-    background-position: -20px -220px;
+  width: 11px;
+  height: 10px;
+  background-position: -20px -220px;
 }
 
 .sprite-arrow-up-hvr {
-    width: 11px;
-    height: 10px;
-    background-position: -20px -270px;
+  width: 11px;
+  height: 10px;
+  background-position: -20px -270px;
 }
 
 .sprite-calendar {
-    width: 21px;
-    height: 22px;
-    background-position: -20px -320px;
+  width: 21px;
+  height: 22px;
+  background-position: -20px -320px;
 }
 
 .sprite-calendar-down {
-    width: 21px;
-    height: 22px;
-    background-position: -20px -382px;
+  width: 21px;
+  height: 22px;
+  background-position: -20px -382px;
 }
 
 .sprite-calendar-hvr {
-    width: 21px;
-    height: 22px;
-    background-position: -20px -444px;
+  width: 21px;
+  height: 22px;
+  background-position: -20px -444px;
 }
 
 .sprite-checkbox {
-    width: 26px;
-    height: 22px;
-    background-position: -20px -506px;
+  width: 26px;
+  height: 22px;
+  background-position: -20px -506px;
 }
 
 .sprite-checkbox-disabled {
-    width: 26px;
-    height: 22px;
-    background-position: -20px -568px;
+  width: 26px;
+  height: 22px;
+  background-position: -20px -568px;
 }
 
 .sprite-checkbox-none {
-    width: 22px;
-    height: 22px;
-    background-position: -20px -630px;
+  width: 22px;
+  height: 22px;
+  background-position: -20px -630px;
 }
 
 .sprite-checkbox-none-disabled {
-    width: 22px;
-    height: 22px;
-    background-position: -20px -692px;
+  width: 22px;
+  height: 22px;
+  background-position: -20px -692px;
 }
 
 .sprite-icon-f {
-    width: 10px;
-    height: 19px;
-    background-position: -20px -754px;
+  width: 10px;
+  height: 19px;
+  background-position: -20px -754px;
 }
 
 .sprite-icon-t {
-    width: 17px;
-    height: 15px;
-    background-position: -20px -813px;
+  width: 17px;
+  height: 15px;
+  background-position: -20px -813px;
 }
 
 .sprite-icon-yt {
-    width: 20px;
-    height: 16px;
-    background-position: -20px -868px;
+  width: 20px;
+  height: 16px;
+  background-position: -20px -868px;
 }
 
 .sprite-logo {
-    width: 113px;
-    height: 39px;
-    background-position: -20px -924px;
+  width: 113px;
+  height: 39px;
+  background-position: -20px -924px;
 }
 
 .sprite-logo-down {
-    width: 113px;
-    height: 39px;
-    background-position: -20px -1003px;
+  width: 113px;
+  height: 39px;
+  background-position: -20px -1003px;
 }
 
 .sprite-logo-hvr {
-    width: 113px;
-    height: 39px;
-    background-position: -20px -1082px;
+  width: 113px;
+  height: 39px;
+  background-position: -20px -1082px;
 }
 
 .sprite-minus {
-    width: 12px;
-    height: 3px;
-    background-position: -20px -1161px;
+  width: 12px;
+  height: 3px;
+  background-position: -20px -1161px;
 }
 
 .sprite-minus-down {
-    width: 12px;
-    height: 3px;
-    background-position: -20px -1204px;
+  width: 12px;
+  height: 3px;
+  background-position: -20px -1204px;
 }
 
 .sprite-minus-hvr {
-    width: 12px;
-    height: 3px;
-    background-position: -20px -1247px;
+  width: 12px;
+  height: 3px;
+  background-position: -20px -1247px;
 }
 
 .sprite-plus {
-    width: 11px;
-    height: 11px;
-    background-position: -20px -1290px;
+  width: 11px;
+  height: 11px;
+  background-position: -20px -1290px;
 }
 
 .sprite-plus-down {
-    width: 11px;
-    height: 11px;
-    background-position: -20px -1341px;
+  width: 11px;
+  height: 11px;
+  background-position: -20px -1341px;
 }
 
 .sprite-plus-hvr {
-    width: 11px;
-    height: 11px;
-    background-position: -20px -1392px;
+  width: 11px;
+  height: 11px;
+  background-position: -20px -1392px;
 }
 
 .sprite-stars2 {
-    width: 42px;
-    height: 17px;
-    background-position: -20px -1443px;
+  width: 42px;
+  height: 17px;
+  background-position: -20px -1443px;
 }
 
 .sprite-stars3 {
-    width: 65px;
-    height: 17px;
-    background-position: -20px -1500px;
+  width: 65px;
+  height: 17px;
+  background-position: -20px -1500px;
 }
 
 .sprite-stars4 {
-    width: 89px;
-    height: 17px;
-    background-position: -20px -1557px;
+  width: 89px;
+  height: 17px;
+  background-position: -20px -1557px;
 }
