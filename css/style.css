@@ -415,40 +415,40 @@ h1.appeal {
   100% {opacity: 1;}
 }
 
-.search-form .arrival-date input {
+.arrival-date input {
   background-image: url("../img/sprite.png");
   background-repeat: no-repeat;
   background-position: 295px -315px;
   cursor: pointer;
 }
 
-.search-form .departure input  {
+.departure input  {
   background-image: url("../img/sprite.png");
   background-repeat: no-repeat;
   background-position: 295px -313px;
   cursor: pointer;
 }
 
-.search-form .arrival-date input:hover {
+.arrival-date input:hover {
   background-image: url("../img/sprite.png");
   background-repeat: no-repeat;
-  background-position: 297px -437px;
+  background-position: 295px -439px;
 }
 
 
-.search-form .departure input:hover {
+.departure input:hover {
   background-image: url("../img/sprite.png");
   background-repeat: no-repeat;
   background-position: 295px -437px;
 }
 
-.search-form .arrival-date input:active {
+.arrival-date input:active {
   background-image: url("../img/sprite.png");
   background-repeat: no-repeat;
-  background-position: 297px -375px;
+  background-position: 295px -377px;
 }
 
-.search-form .departure input:active {
+.departure input:active {
   background-image: url("../img/sprite.png");
   background-repeat: no-repeat;
   background-position: 295px -375px;
@@ -480,14 +480,6 @@ h1.appeal {
   margin-right: 51px;
   padding-top: 4px;
   padding-bottom: 4px;
-}
-
-.active-input:hover{
-  width: 292px;
-  border: none;
-  background-color: #ebebeb;
-  padding: 6px 14px;
-  padding-right: 40px;
 }
 
 .departure {
@@ -779,39 +771,39 @@ h1.appeal {
   width: 566px;
 }
 
-.search-form-inner .arrival-date-inner input {
+.arrival-date-inner input {
   background-image: url("../img/sprite.png");
   background-repeat: no-repeat;
   background-position: 295px -315px;
   cursor: pointer;
 }
 
-.search-form-inner .departure-inner input  {
+.departure-inner input  {
   background-image: url("../img/sprite.png");
   background-repeat: no-repeat;
   background-position: 295px -313px;
   cursor: pointer;
 }
 
-.search-form-inner .arrival-date-inner input:hover {
+.arrival-date-inner input:hover {
   background-image: url("../img/sprite.png");
   background-repeat: no-repeat;
   background-position: 295px -439px;
 }
 
-.search-form-inner .departure-inner input:hover {
+.departure-inner input:hover {
   background-image: url("../img/sprite.png");
   background-repeat: no-repeat;
   background-position: 295px -437px;
 }
 
-.search-form-inner .arrival-date-inner input:active {
+.arrival-date-inner input:active {
   background-image: url("../img/sprite.png");
   background-repeat: no-repeat;
   background-position: 295px -377px;
 }
 
-.search-form-inner .departure-inner input:active {
+.departure-inner input:active {
   background-image: url("../img/sprite.png");
   background-repeat: no-repeat;
   background-position: 295px -375px;
@@ -1188,7 +1180,7 @@ h1.appeal {
 .social-btn-tw:active::before{
   width: 17px;
   height: 15px;
-  background-position: -18px -813px;
+  background-position: -20px -813px;
   opacity: 0.3;
 }
 
@@ -1525,12 +1517,12 @@ input[type="checkbox"]:disabled + label::before {
   border-bottom: 1px dotted #81b3d2;
 }
 
-.filter-name a.active-point  {
+a.active-point  {
   color: #81b3d2;
 }
 
 .filter-name a:active:not(.active-point),
-.filter-name a:active.active-point {
+a:active.active-point {
   color: #000000;
   border-bottom: none;
 }
@@ -1626,6 +1618,10 @@ input[type="checkbox"]:disabled + label::before {
 
 .title-hotel a:hover{
   color: #81b3d2;
+}
+
+.title-hotel a:active {
+  color: rgba(0, 0, 0, 0.3);
 }
 
 h2 {
