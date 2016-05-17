@@ -215,7 +215,9 @@ h1.appeal {
 }
 
 .block2 {
+  font-size: 0;
   margin-bottom: 60px;
+  text-align: center;
 }
 
 .block2 p {
@@ -235,22 +237,12 @@ h1.appeal {
   padding-right: 32px;
 }
 
-.column1 {
-  float: left;
+.column {
+  display: inline-block;
+  vertical-align: top;
   width: 33%;
   text-align: center;
-}
-
-.column2 {
-  float: left;
-  width: 33%;
-  text-align: center;
-}
-
-.column3 {
-  float: right;
-  width: 33%;
-  text-align: center;
+  font-size: 14px;
 }
 
 .icons {
@@ -272,9 +264,7 @@ h1.appeal {
   height: 76px;
 }
 
-.column1 p,
-.column2 p,
-.column3 p {
+.column p {
   padding-bottom: 2px;
   padding-left: 40px;
   padding-right: 40px;
@@ -314,9 +304,10 @@ h1.appeal {
 }
 
 .block4 {
+  font-size: 0;
   background-color: #eeeeee;
-  padding-top: 30px;
-  padding-bottom: 45px;
+  padding-top: 50px;
+  padding-bottom: 42px;
   margin-bottom: 55px;
 }
 
@@ -330,6 +321,9 @@ h1.appeal {
   font-size: 21px;
   font-weight: bold;
   line-height: 21px;
+  width: 140px;
+  margin: 0 auto;
+  margin-bottom: 22px;
 }
 
 .number-item2 {
@@ -388,7 +382,7 @@ h1.appeal {
   box-shadow: 0 0 30px 10px rgba(0, 0, 0, 0.2);
   display: none;
   z-index: 3;
-  top: 2171px;
+  top: 2168px;
   left: 50%;
   background-color: #ffffff;
   margin-left: -283px;
@@ -507,7 +501,7 @@ h1.appeal {
 }
 
 .selection {
-  padding-bottom: 44px;
+  padding-bottom: 50px;
   padding-left: 54px;
 }
 
@@ -1095,7 +1089,7 @@ h1.appeal {
   float: left;
   width: 140px;
   padding-left: 132px;
-  padding-top: 40px;
+  padding-top: 45px;
   padding-bottom: 49px;
   padding-right: 246px;
 }
@@ -1120,7 +1114,7 @@ h1.appeal {
   float: left;
   width: 165px;
   text-align: center;
-  padding-top: 26px;
+  padding-top: 30px;
   margin-bottom: 35px;
 }
 
