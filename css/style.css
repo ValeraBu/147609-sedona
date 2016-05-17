@@ -237,23 +237,23 @@ h1.appeal {
 
 .column1 {
   float: left;
-  width: 300px;
+  width: 33%;
   text-align: center;
-  padding-left: 50px;
+  /*padding-left: 50px;*/
 }
 
 .column2 {
   float: left;
-  width: 320px;
+  width: 33%;
   text-align: center;
-  padding-left: 90px;
+  /*padding-left: 90px;*/
 }
 
 .column3 {
   float: right;
-  width: 300px;
+  width: 33%;
   text-align: center;
-  padding-right: 50px;
+  /*padding-right: 50px;*/
 }
 
 .icons {
@@ -275,16 +275,12 @@ h1.appeal {
   height: 76px;
 }
 
-.column1 p {
-  padding-bottom: 2px;
-}
-
-.column2 p {
-  padding-bottom: 2px;
-}
-
+.column1 p,
+.column2 p,
 .column3 p {
   padding-bottom: 2px;
+  padding-left: 40px;
+  padding-right: 40px;
 }
 
 .mini-title {
@@ -329,14 +325,14 @@ h1.appeal {
 
 .rubric {
   padding-top: 5px;
+  padding-left: 50px;
+  padding-right: 50px;
 }
 
 .mini-title2 {
-  width: 130px;
   font-size: 21px;
   font-weight: bold;
   line-height: 21px;
-  padding-left: 85px;
 }
 
 .number-item2 {
