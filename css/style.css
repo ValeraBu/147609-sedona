@@ -239,21 +239,18 @@ h1.appeal {
   float: left;
   width: 33%;
   text-align: center;
-  /*padding-left: 50px;*/
 }
 
 .column2 {
   float: left;
   width: 33%;
   text-align: center;
-  /*padding-left: 90px;*/
 }
 
 .column3 {
   float: right;
   width: 33%;
   text-align: center;
-  /*padding-right: 50px;*/
 }
 
 .icons {
